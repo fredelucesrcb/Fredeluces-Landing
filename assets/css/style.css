@@ -6,7 +6,8 @@
 
 .main{
 	
-	margin-left: 150px;
+	margin-top: 55px;
+	max-width: 100
 }
 
 h3{
@@ -18,8 +19,8 @@ h3{
 	display:block;
 }
 }
-.fas{
-	font-size: 50px;
+.fa-truck{
+	font-size: 70px;
 }
 .header{
 	max-width:100%;
@@ -30,29 +31,34 @@ h3{
 }
 
 .nav{
-	position:fixed;
-	background-color: rgba(165, 177, 194,1.0);
-	height:100%;
-	width: 150px;
+	display: flex;
+	background-color: grey/*rgba(165, 177, 194)*/;
+	height:50px;
+	width: 100%;
+	/*margin: 0px auto;*/
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 5px;
+	border: 1px solid black;
 
 }
 
 .website-name,
 .fas{
 	position:relative;
-	left:40px;
+	left:25px;
 }
 
 
 .big-box{
 
-	width: 100%;
+	max-width: 100%;
 	height: 300px;
 	/*background-color: rgba(253, 227, 167, 0.5); */
-	/*float:left;*/
-	background-image: url(../images/bike6.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url(../images/bike7.jpg);
+	background-repeat: repeat-x;
+	background-size: 100%;
 }
 
 
@@ -98,5 +104,171 @@ h3{
 position: relative;
  }
 
+.colbox{
+	height: 98%;
+	width: 28%;
+	float: left;
+	border: 1px solid white;
+	margin: 0px 2%;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.column{
+	width: 90%;
+	height: 90%;
+	position: relative;
+	left: 30px;
+	margin: 0 auto;
+}
+
+.colbox > img{
+	height: 35%;
+	width: 100%;
+	/*border: 1px solid white;*/
+}
+
+/*.team{
+	width:100%;
+	position: relative;
+	left: 30px;
+}*/
+
+.column,
+.column2{
+	border:1px white;
+}
+
+.colbox2{
+	height:44%;
+	width: 45%;
+	float:left;
+	border: 1px solid white;
+	margin: 5px 2%;
+	overflow: hidden;
+	border-radius: 5px;
+
+}
+
+.column2{
+	width:96%;
+	height:93%;
+	position:relative;
+	left: 30px;
+
+}
+
+.icon-left,
+.content-left,
+.content-right{
+	float:left;
+}
+
+.icon-left > img{
+	width: 50px;
+	height: 50px;
+	border-radius: 40px;
+	margin: 7px;
+}
+
+.icon-right{
+	float: right;
+}
+
+.icon-right>img{
+	width: 50px;
+	height: 50px;
+	border-radius: 40px;
+	margin: 7px;
+}
+
+.content-right{
+	text-align: right;
+}
+
+.team-box{
+	height:33%;
+	width: 92%;
+	border: 1px dotted	white;
+	margin-left: 30px;
+	margin-bottom: 5%;
+}
+
+.team-box > img{
+	width: 50px;
+	height: 50px;
+	border-radius: 40px;
+	margin: 7px;
+	float: left;
+}
+
+.team-box > p{
+	margin-bottom: 5px;
+}
+
+.team-box > h4{
+	margin: 10px;
+}
+
+.social-media{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 100px;
 
 
+}
+
+.icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 50px;
+}
+
+.logo{
+	margin: 20px;
+}
+
+
+.footer{
+	width: 100%;
+	height: 80px;
+	background-color: rgba(85, 239, 196,1.0);
+}
+
+small{
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+.bottom{
+	display: flex;
+	align-items: center;
+	/*display: inline-block;*/
+	justify-content: flex-end;
+	margin-top: -35px;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: pink;
+
+}
+
+a:link{
+	color:white;
+}
+
+a:visited{
+	color:indianred;
+}
+
+a:active{
+	color:red;
+}
