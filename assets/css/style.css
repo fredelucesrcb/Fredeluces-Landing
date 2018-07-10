@@ -1,13 +1,14 @@
-{
+* 	{
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Stardos Stencil', cursive;
 }
 
 .main{
 	
-	margin-top: 55px;
-	max-width: 100
+	/*margin-top: 55px;*/
+	width: 100%;
 }
 
 h3{
@@ -23,42 +24,54 @@ h3{
 	font-size: 70px;
 }
 .header{
-	max-width:100%;
+	width:100%;
 	height: 200px;
 	background-color: rgba(252, 92, 101, 0.8);
 	text-align: center;
 
 }
 
+.nav-item {
+	/*display: inline;*/
+	/*color: red;*/
+}
+
+
 .nav{
 	display: flex;
-	background-color: grey/*rgba(165, 177, 194)*/;
+	background-color:rgba(165, 177, 194, 0.6);
 	height:50px;
 	width: 100%;
 	/*margin: 0px auto;*/
 	align-items: center;
 	justify-content: space-around;
-	position: absolute;
-	top: 5px;
+	position: relative;
+	/*top: -50px;*/
 	border: 1px solid black;
 
 }
 
+/*.website-name > h1,\ {
+	display: inline;
+}*/
+
 .website-name,
 .fas{
 	position:relative;
-	left:25px;
+	/*left:25px;*/
+	/*display: inline;*/
 }
 
 
-.big-box{
+.about{
 
-	max-width: 100%;
-	height: 300px;
+	width: 100%;
+	height: 600px;
 	/*background-color: rgba(253, 227, 167, 0.5); */
 	background-image: url(../images/bike7.jpg);
-	background-repeat: repeat-x;
-	background-size: 100%;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
@@ -116,7 +129,7 @@ position: relative;
 
 .column{
 	width: 90%;
-	height: 90%;
+	height: 85%;
 	position: relative;
 	left: 30px;
 	margin: 0 auto;
@@ -147,51 +160,70 @@ position: relative;
 	margin: 5px 2%;
 	overflow: hidden;
 	border-radius: 5px;
+	display: inline-block;
 
 }
 
 .column2{
 	width:96%;
 	height:93%;
-	position:relative;
-	left: 30px;
+	/*position:relative;*/
+	left: 0px;
+	padding-left: 30px;
 
 }
 
-.icon-left,
-.content-left,
-.content-right{
+.icon-left{
+	float: left;
+	
+	width: 25%;
+	
+}
+.content-left{
 	float:left;
+	
+	width: 73%;
+	
 }
+
+.content-right{
+	float: right;
+	width:73%;
+}
+
 
 .icon-left > img{
 	width: 50px;
 	height: 50px;
 	border-radius: 40px;
-	margin: 7px;
+	margin: 3px;
 }
 
 .icon-right{
 	float: right;
+	width: 25%
+	margin-left: 1%;
 }
 
 .icon-right>img{
 	width: 50px;
 	height: 50px;
 	border-radius: 40px;
-	margin: 7px;
+	margin: 3px;
 }
 
 .content-right{
 	text-align: right;
+	/*float:left;*/
 }
 
 .team-box{
-	height:33%;
+	height:30%;
 	width: 92%;
 	border: 1px dotted	white;
 	margin-left: 30px;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
+	border-radius: 5px;
 }
 
 .team-box > img{
@@ -203,11 +235,11 @@ position: relative;
 }
 
 .team-box > p{
-	margin-bottom: 5px;
+	margin-bottom: 0;
 }
 
 .team-box > h4{
-	margin: 10px;
+	margin: 6px;
 }
 
 .social-media{
@@ -222,20 +254,22 @@ position: relative;
 
 .icons{
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	
 	font-size: 50px;
 }
 
 .logo{
-	margin: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	margin-left: 20px;
 }
 
 
 .footer{
 	width: 100%;
-	height: 80px;
+	height: 20px;
 	background-color: rgba(85, 239, 196,1.0);
 }
 
@@ -250,7 +284,7 @@ small{
 	align-items: center;
 	/*display: inline-block;*/
 	justify-content: flex-end;
-	margin-top: -35px;
+	margin-top:-30px;
 }
 
 a{
@@ -271,4 +305,172 @@ a:visited{
 
 a:active{
 	color:red;
+}
+
+
+#image1{
+	background-color: rgba(	248, 248, 255, 0.8);
+}
+
+#image2{
+	background-color: rgba(100,149,237, 0.8);
+}
+
+#image3{
+	background-color: rgba(243, 76, 86, 0.8);
+}
+
+.image4{
+	background-color: rgba(225,247,213, 0.8);
+}
+
+#team1{
+	background-color: rgba(118, 152, 179, 0.8);
+}
+#team2{
+	background-color: rgba(252, 236, 201, 0.8);
+}
+#team3{
+	background-color: rgba(228, 253, 225, 0.8);
+}
+
+.about1{
+	background-color: rgba(2, 128, 144, 0.8);
+	width:90%;
+	min-height: 60px;
+	margin: 0 auto;
+	border-radius: 5px;
+	
+}
+
+.about1 > p{
+	padding: 3px 10px 3px 10px;
+	line-height: 2;
+}
+
+.about2{
+	background-color: rgba(231, 223, 232, 0.8);
+	width:90%;
+	min-height: 60px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.about2 > h4,p{
+	padding: 3px 10px 3px 10px;
+	line-height: 2;
+}
+
+.visionmission{
+	width: 90%;
+	margin: 0 auto;
+	/*border: 1px solid white;*/
+}
+
+.vmbox{
+	width:48%;
+	min-height: 150px;
+	background-color: rgba(69, 105, 144, 0.8);
+	/*float:left;*/
+	border-radius: 5px;
+	
+}
+
+#vmboxleft{
+	margin-right: 1%;
+	float:left;
+}
+
+#vmboxright{
+	margin-left: 1%;
+	float:right;
+	text-align: right;
+}
+
+.about1, 
+.about2,
+.visionmission{
+	margin-bottom: 20px;
+}
+
+.main-article{
+	padding-top: 30px;
+	border: 4px solid white;
+}
+
+.website-name > h1{
+	font-family: 'Knewave', cursive;
+}
+
+.website-name > p{
+
+}
+
+h3{
+font-family: 'Just Me Again Down Here', cursive;
+font-size: 1.5em;
+padding-left: 2px;
+padding-right: 0px;
+/*border: 2px solid red;*/
+margin-right: 0px;
+display: inline-block;
+}
+
+h3:hover{
+	color: white;
+}
+
+.website-name > p{
+	font-family: 'Stardos Stencil', cursive;
+}
+
+.colbox > img{
+	transition: 1s;
+}
+.colbox > img:hover{
+	transform: scale(1.5);
+}
+
+.icons > .logo{
+	transition: 1s;
+}
+.icons > .logo:hover{
+	transform: scale(2);
+}
+
+.team-box > img{
+	transition: 2s;
+
+}
+
+.team-box > img:hover{
+	transform: scale(2.5);
+}
+
+.colbox2 > .icon-left > img{
+	transition: 1s;
+}
+
+.colbox2 > .icon-left > img:hover{
+	transform: scale(2);
+}
+
+.colbox2 > .icon-right > img{
+	transition: 1s;
+}
+
+.colbox2 > .icon-right > img:hover{
+	transform: scale(2);
+}
+
+.content-left > p{
+	font-size: 1em;
+}
+
+.content-right> p{
+	font-size: 1em;
+}
+
+.colbox > h5{
+	text-align: center;
 }
